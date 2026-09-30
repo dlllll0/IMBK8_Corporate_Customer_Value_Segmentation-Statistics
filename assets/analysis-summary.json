@@ -1,0 +1,221 @@
+{
+  "basis": "Notebook-derived recomputation; new business extensions explicitly separated",
+  "data": {
+    "rows": 347299,
+    "variables": 45,
+    "first_month": 202201,
+    "last_month": 202412,
+    "months": 36,
+    "exact_duplicate_rows_retained": 78,
+    "has_stable_customer_id": false,
+    "nonzero_balance_rows": 345553,
+    "extreme_rows": 60399,
+    "analysis_rows": 285154
+  },
+  "segments": {
+    "일반(Standard)": 87786,
+    "스타(Star)": 87786,
+    "알짜(Cash Cow)": 54791,
+    "잠재(Potential)": 54791
+  },
+  "cutoffs": {
+    "FAI": 0.3837938215339579,
+    "FPI": 0.19940752070932716
+  },
+  "cashcow_grade_FPI_median": {
+    "우수": 0.20429581433946126,
+    "일반": 0.20405317890745223,
+    "최우수": 0.21759998803740588
+  },
+  "historical_target": {
+    "rows": 10328,
+    "digital_nonuser_rows": 6295
+  },
+  "tests": {
+    "alpha": 0.05,
+    "old_grade_FPI_kruskal": {
+      "statistic": 83845.65013159416,
+      "p_value": 0.0
+    },
+    "new_grade_FPI_kruskal": {
+      "statistic": 214972.5273677285,
+      "p_value": 0.0
+    },
+    "new_grade_FAI_kruskal_corrected": {
+      "statistic": 218311.2088972418,
+      "p_value": 0.0
+    },
+    "old_grade_margin_levene": {
+      "statistic": 36336.15881574643,
+      "p_value": 0.0
+    },
+    "cashcow_FPI_levene": {
+      "statistic": 2185.7719749733765,
+      "p_value": 0.0
+    },
+    "cashcow_FPI_kruskal": {
+      "statistic": 13011.745864188611,
+      "p_value": 0.0
+    },
+    "cashcow_FPI_dunn_bonferroni": {
+      "우수": {
+        "우수": 1.0,
+        "일반": 0.007894000139140468,
+        "최우수": 0.0
+      },
+      "일반": {
+        "우수": 0.007894000139140468,
+        "일반": 1.0,
+        "최우수": 0.0
+      },
+      "최우수": {
+        "우수": 0.0,
+        "일반": 0.0,
+        "최우수": 1.0
+      }
+    },
+    "cashcow_general_excellent_rank_biserial_added": 0.0031918069351082323,
+    "digital_FPI_mannwhitney": {
+      "statistic": 12842873.5,
+      "p_value": 0.31346417360637513
+    },
+    "digital_rank_biserial_added": 0.01173842408548853,
+    "cashcow_margin_greater_than_일반(Standard)": {
+      "statistic": 4642804997.5,
+      "p_value": 0.0
+    },
+    "cashcow_margin_greater_than_잠재(Potential)": {
+      "statistic": 2903486884.0,
+      "p_value": 0.0
+    }
+  },
+  "VIF_activity_no_intercept_original": {
+    "총예금잔액": 1.1109621622064985,
+    "총대출잔액": 1.0504261843446108,
+    "총채널거래금액": 1.7343823785834243,
+    "총외환금액": 1.63297861179914,
+    "총카드사용금액": 1.0763475705130898,
+    "총채널거래건수": 1.7000955987008022,
+    "총외환거래건수": 1.686206053098564,
+    "다양성점수": 1.2038104032256036
+  },
+  "latest": {
+    "month": 202412,
+    "raw_rows": 9712,
+    "regular": {
+      "rows": 7956,
+      "income_proxy_million_krw": 19143.1581134,
+      "margin_proxy_million_krw": 19053.165164,
+      "fee_proxy_million_krw": 89.9929494,
+      "income_proxy_median_million_krw": 0.8251101599999999
+    },
+    "nonzero_including_extreme": {
+      "rows": 9657,
+      "income_proxy_million_krw": 52290.751403719994,
+      "margin_proxy_million_krw": 51444.946152000004,
+      "fee_proxy_million_krw": 845.80525172,
+      "income_proxy_median_million_krw": 1.1819799999999998
+    },
+    "target": {
+      "rows": 459,
+      "income_proxy_million_krw": 1892.39203627,
+      "margin_proxy_million_krw": 1891.4833640000002,
+      "fee_proxy_million_krw": 0.9086722700000001,
+      "income_proxy_median_million_krw": 2.868102
+    },
+    "target_row_share_regular": 0.057692307692307696,
+    "target_proxy_share_regular": 0.09885474617405716,
+    "target_proxy_share_nonzero": 0.03618980384618023,
+    "target_digital_nonuser_rows": 278,
+    "target_zero_channel_rows": 254,
+    "nonuser_with_branch_activity_rows_display": "<10",
+    "target_dedicated_manager_rows": 292,
+    "target_loan_use_rows": 455,
+    "target_card_use_rows": 146,
+    "loan_and_no_card_use_candidate_rows": 313,
+    "candidate_dedicated_manager_rows": 201,
+    "candidate_credit_card_zero_count_rows": 156,
+    "candidate_credit_card_positive_count_rows": 157,
+    "reactivation_dedicated_manager_rows": 97,
+    "segments": {
+      "스타(Star)": {
+        "rows": 2341,
+        "income_proxy_million_krw": 11127.54981576,
+        "margin_proxy_million_krw": 11060.254673,
+        "fee_proxy_million_krw": 67.29514276,
+        "income_proxy_median_million_krw": 3.3241503999999997
+      },
+      "알짜(Cash Cow)": {
+        "rows": 1500,
+        "income_proxy_million_krw": 7106.951517609999,
+        "margin_proxy_million_krw": 7094.280032000001,
+        "fee_proxy_million_krw": 12.67148561,
+        "income_proxy_median_million_krw": 3.2502
+      },
+      "일반(Standard)": {
+        "rows": 2531,
+        "income_proxy_million_krw": 693.5768596199999,
+        "margin_proxy_million_krw": 690.9697,
+        "fee_proxy_million_krw": 2.60715962,
+        "income_proxy_median_million_krw": 0.191608
+      },
+      "잠재(Potential)": {
+        "rows": 1584,
+        "income_proxy_million_krw": 215.07992040999994,
+        "margin_proxy_million_krw": 207.66075899999993,
+        "fee_proxy_million_krw": 7.41916141,
+        "income_proxy_median_million_krw": 0.19312719999999992
+      }
+    }
+  },
+  "sensitivity": [
+    {
+      "contribution_weight": 0.4,
+      "efficiency_weight": 0.6,
+      "latest_target_rows": 462,
+      "baseline_overlap_rows": 459,
+      "jaccard": 0.9935064935064936
+    },
+    {
+      "contribution_weight": 0.5,
+      "efficiency_weight": 0.5,
+      "latest_target_rows": 459,
+      "baseline_overlap_rows": 459,
+      "jaccard": 1.0
+    },
+    {
+      "contribution_weight": 0.6,
+      "efficiency_weight": 0.4,
+      "latest_target_rows": 458,
+      "baseline_overlap_rows": 458,
+      "jaccard": 0.9978213507625272
+    }
+  ],
+  "scenario": {
+    "horizon": "one month",
+    "status": "illustrative assumptions, not observed profit or bank estimates",
+    "incremental_contribution_per_activation_krw_assumption": 30000,
+    "contact_cost_per_slot_krw_assumption": 1000,
+    "break_even_incremental_conversion_assumption": 0.03333333333333333,
+    "cases": [
+      {
+        "incremental_conversion_assumption": 0.02,
+        "candidate_rows_used_as_contact_slots_assumption": 157,
+        "expected_incremental_activations": 3.14,
+        "one_month_net_gain_assumption_krw": -62800.0
+      },
+      {
+        "incremental_conversion_assumption": 0.05,
+        "candidate_rows_used_as_contact_slots_assumption": 157,
+        "expected_incremental_activations": 7.8500000000000005,
+        "one_month_net_gain_assumption_krw": 78500.00000000003
+      },
+      {
+        "incremental_conversion_assumption": 0.1,
+        "candidate_rows_used_as_contact_slots_assumption": 157,
+        "expected_incremental_activations": 15.700000000000001,
+        "one_month_net_gain_assumption_krw": 314000.00000000006
+      }
+    ]
+  }
+}
