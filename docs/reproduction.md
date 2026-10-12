@@ -12,7 +12,7 @@ python scripts/validate_repository.py
 
 ## 승인된 데이터로 재분석
 
-실데이터·보조표는 저장소 밖에 둔 채 경로만 전달한다. 입력 3개는 CP949 거래 CSV, UTF-8 금리 CSV, UTF-8 추정 수수료 CSV다. 데이터명세는 [입력 설명](data-dictionary.md)에 있다. 승인된 데이터를 새로 요청하거나 업로드할 필요는 없다.
+실데이터·보조표는 저장소 밖에 둔 채 경로만 전달한다. 입력 3개는 CP949 거래 CSV, UTF-8 금리 CSV, UTF-8 추정 수수료 CSV다. 데이터명세는 [입력 설명](data-dictionary.md)에 있다. 
 
 ```powershell
 python -m venv .venv
